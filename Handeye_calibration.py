@@ -18,10 +18,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSHistoryPolicy, QoSProfile, QoSReliabilityPolicy
 from sensor_msgs.msg import CameraInfo, Image
 
-# ----------------------------------------------------------------------------
-#  ฟังก์ชันช่วยจาก detect_object.py (ถ้ามี) ถ้าไม่มีจะใช้เวอร์ชันในไฟล์นี้แทน
-#  ไฟล์นี้ตรวจจับสีเหลืองเองทั้งหมด จึงไม่ต้องมี detect_yellow_objects ใน detect_object.py
-# ----------------------------------------------------------------------------
+
 try:
     import detect_object as _do
 except ImportError:
